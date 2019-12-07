@@ -12,7 +12,7 @@ export default function Profile() {
   const dispatch = useDispatch();
 
   function handleSubmit(data) {
-    console.tron.log(data);
+    // console.tron.log(data);
   }
 
   function handleSignOut() {
@@ -29,10 +29,14 @@ export default function Profile() {
 
         <hr />
 
-        <Input name="password" type="password" placeholder="Sua senha atual" />
-        <Input name="password" type="password" placeholder="Nova senha" />
         <Input
-          name="password"
+          name="oldPassword"
+          type="password"
+          placeholder="Sua senha atual"
+        />
+        <Input name="newPassword" type="password" placeholder="Nova senha" />
+        <Input
+          name="confimPassword"
           type="password"
           placeholder="Confirmaão de senha"
         />
